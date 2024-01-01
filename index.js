@@ -21,8 +21,8 @@ function moveDodgerRight(){
     const left = parseInt(leftNumbers,10);
 
     const dodgerwidth = 40;
-    //calculate rightedge as the maximum position to prevent dodger from escapping off the rightside
-    const rightEdge = 360 - dodgerwidth; //game field is 400px by 400px // I got the 360 from the test
+    //calculate rightedge as the maximum position to prevent dodger from escapping off  to the rightside
+    const rightEdge = 400 - dodgerwidth; //game field is 400px by 400px
     //condition to ensure the dodger is moved to the right only if it hasn't reached the right edge yet
     if(left < rightEdge){
         dodger.style.left = `${left +1}px`;  
